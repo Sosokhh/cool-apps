@@ -1,0 +1,17 @@
+<body class="container" #container>
+
+<button class="toggle" (click)="modeSelect()">{{ mode }}</button>
+
+<div class="clock-container">
+  <div class="clock">
+    <div class="needle hour" #hour></div>
+    <div class="needle minute" #minute></div>
+    <div class="needle second" #second></div>
+    <div class="center-point"></div>
+  </div>
+
+  <div class="time" #time></div>
+  <div class="date" #date><span class="circle"></span></div>
+</div>
+
+</body>
