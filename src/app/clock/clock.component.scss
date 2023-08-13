@@ -18,15 +18,13 @@ $secondary-color: #fff;
     background-color: #111;
     color: var(--primary-color);
   }
-
   font-family: 'Heebo', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 68px);
+  height: 100vh;
   overflow: hidden;
   position: relative;
-  margin-top: 18px;
 }
 
 .toggle {

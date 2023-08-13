@@ -1,0 +1,20 @@
+<div class="body">
+  <div class="key" *ngIf="!clicked">
+    Press any key to get the keyCode
+  </div>
+  <div class="key-container" *ngIf="clicked">
+    <div class="key">
+      {{keyCodes.key === ' ' ? 'space' : keyCodes.key}}
+      <small>event.key</small>
+    </div>
+    <div class="key">
+      {{keyCodes.keyCode}}
+      <small>event.keyCode</small>
+    </div>
+    <div class="key">
+      {{keyCodes.code}}
+      <small>event.code</small>
+    </div>
+  </div>
+</div>
+
