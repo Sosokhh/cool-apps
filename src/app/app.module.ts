@@ -8,6 +8,8 @@ import {ClockComponent} from './clock/clock.component';
 import {KeyCodesComponent} from './key-codes/key-codes.component';
 import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ChoicePickerComponent } from './choice-picker/choice-picker.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import {HttpClientModule} from "@angular/common/http";
     ClockComponent,
     KeyCodesComponent,
     DadJokesComponent,
+    ChoicePickerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
