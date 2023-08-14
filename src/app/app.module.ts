@@ -10,6 +10,7 @@ import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
 import {HttpClientModule} from "@angular/common/http";
 import { ChoicePickerComponent } from './choice-picker/choice-picker.component';
 import {FormsModule} from "@angular/forms";
+import { BackgroundBoxesComponent } from './background-boxes/background-boxes.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {FormsModule} from "@angular/forms";
     KeyCodesComponent,
     DadJokesComponent,
     ChoicePickerComponent,
+    BackgroundBoxesComponent,
   ],
   imports: [
     BrowserModule,
