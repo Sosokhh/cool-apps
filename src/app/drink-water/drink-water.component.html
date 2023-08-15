@@ -1,0 +1,23 @@
+<div class="body">
+  <h1>Drink Water</h1>
+  <h3>Goal: {{ goalLiters }} Liters</h3>
+
+  <div class="cup">
+    <div class="remained" #remained>
+      <span #liters></span>
+      <small>Remained</small>
+    </div>
+
+    <div class="percentage" #percentage></div>
+  </div>
+
+  <p class="text">Select how many glasses of water that you have drunk</p>
+
+  <div class="cups">
+    <div class="cup cup-small" *ngFor="let cup of smallCups; let i = index"
+         [ngClass]="{ 'full': cup }"
+         (click)="highlightCups(i)">250 ml
+    </div>
+  </div>
+
+</div>

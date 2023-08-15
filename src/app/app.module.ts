@@ -11,6 +11,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { ChoicePickerComponent } from './choice-picker/choice-picker.component';
 import {FormsModule} from "@angular/forms";
 import { BackgroundBoxesComponent } from './background-boxes/background-boxes.component';
+import { DrinkWaterComponent } from './drink-water/drink-water.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BackgroundBoxesComponent } from './background-boxes/background-boxes.co
     DadJokesComponent,
     ChoicePickerComponent,
     BackgroundBoxesComponent,
+    DrinkWaterComponent,
   ],
   imports: [
     BrowserModule,
