@@ -13,6 +13,7 @@ import {FormsModule} from "@angular/forms";
 import { BackgroundBoxesComponent } from './background-boxes/background-boxes.component';
 import { DrinkWaterComponent } from './drink-water/drink-water.component';
 import { HoverboardComponent } from './hoverboard/hoverboard.component';
+import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HoverboardComponent } from './hoverboard/hoverboard.component';
     BackgroundBoxesComponent,
     DrinkWaterComponent,
     HoverboardComponent,
+    DragNDropComponent,
   ],
   imports: [
     BrowserModule,
