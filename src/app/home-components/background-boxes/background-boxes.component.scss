@@ -5,14 +5,8 @@
 }
 
 .container {
-  background-color: #fafafa;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
 
   .magic {
     background-color: #f9ca24;
@@ -23,7 +17,7 @@
     font-size: 16px;
     padding: 12px 20px;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     top: 90px;
     letter-spacing: 1px;
     box-shadow: 0 3px rgba(249, 202, 36, 0.5);

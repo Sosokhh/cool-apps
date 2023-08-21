@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: 0;
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.content {
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    color: #c3c7bf;
+  }
+}
