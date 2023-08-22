@@ -1,0 +1,36 @@
+<div class="panel-container">
+  <div *ngIf="!clicked">
+    <strong>How satisfied are you with our <br>
+      customer support performance?
+    </strong>
+    <div class="ratings-container">
+      <div class="rating" (click)="selectRating('Unhappy', divUnhappy)" #divUnhappy>
+        <img
+          src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png"
+          alt="">
+        <small>Unhappy</small>
+      </div>
+      <div class="rating" (click)="selectRating('Neutral', divNeutral)" #divNeutral>
+        <img
+          src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png"
+          alt=""/>
+        <small>Neutral</small>
+      </div>
+      <div class="rating active" (click)="selectRating('Satisfied', divSatisfied)" #divSatisfied>
+        <img
+          src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png"
+          alt=""/>
+        <small>Satisfied</small>
+      </div>
+    </div>
+    <button class="btn" (click)="clicked = true">Send Review</button>
+  </div>
+  <div *ngIf="clicked" class="feedback-close">
+    <i class="fas fa-heart"></i>
+    <strong>Thank You!</strong>
+    <br>
+    <strong>Feedback: {{selectedRating}}</strong>
+    <p>We'll use your feedback to improve our customer support</p>
+  </div>
+  <button *ngIf="clicked" class="btn" (click)="onClose()">Close</button>
+</div>
