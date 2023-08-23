@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .nav-container {
   font-family: 'Open Sans', sans-serif;
   color: #222;
@@ -26,6 +21,8 @@
       align-items: center;
       padding: 20px 0;
       transition: all 0.3s ease-in-out;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     ul {
@@ -40,6 +37,10 @@
       text-decoration: none;
       padding: 7px 15px;
       transition: all 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.85;
+      }
     }
 
     &.active {
@@ -55,7 +56,4 @@
       }
     }
   }
-}
-.nav a.current, nav li:hover {
-  color: #c0392b;
 }

@@ -5,7 +5,7 @@ import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
   templateUrl: './drink-water.component.html',
   styleUrls: ['./drink-water.component.scss']
 })
-export class DrinkWaterComponent  implements AfterViewInit {
+export class DrinkWaterComponent implements AfterViewInit {
   @ViewChild('liters') litersRef!: ElementRef;
   @ViewChild('percentage') percentageRef!: ElementRef;
   @ViewChild('remained') remainedRef!: ElementRef;

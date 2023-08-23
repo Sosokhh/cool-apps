@@ -1,12 +1,11 @@
 <div class="body">
-<div class="container" id="container">
-  <div
-    class="square"
-    (mouseover)="setColor(square)"
-    (mouseout)="removeColor(square)"
-    *ngFor="let _ of divArray"
-    #square>
+  <div class="container" id="container">
+    <div
+      class="square"
+      (mouseover)="setColor(square)"
+      (mouseout)="removeColor(square)"
+      *ngFor="let _ of divArray"
+      #square>
+    </div>
   </div>
-</div>
-
 </div>

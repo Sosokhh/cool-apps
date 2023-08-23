@@ -1,7 +1,7 @@
 <canvas #canvas width="800" height="800"></canvas>
 <div class="toolbox">
   <button (click)="decreaseSize()">-</button>
-  <span id="size">{{ size }}</span>
+  <span>{{ size }}</span>
   <button (click)="increaseSize()">+</button>
   <input type="color" [(ngModel)]="color">
   <button (click)="clearCanvas()">X</button>

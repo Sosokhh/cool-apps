@@ -20,8 +20,7 @@ export class BackgroundBoxesComponent implements AfterViewInit{
     this.isBig = !this.isBig;
   }
 
-  public createBoxes() {
-    console.log(this.boxesContainer)
+  private createBoxes() {
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 4; j++) {
         const box = this.renderer.createElement('div');

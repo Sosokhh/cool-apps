@@ -1,34 +1,24 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-
-interface Joke {
-  id: string,
-  joke: string,
-  status: number
-}
+import {DadJokesService} from "./dad-jokes.service";
 
 
 @Component({
   selector: 'app-dad-jokes',
   templateUrl: './dad-jokes.component.html',
-  styleUrls: ['./dad-jokes.component.scss']
+  styleUrls: ['./dad-jokes.component.scss'],
+  providers: [DadJokesService]
 })
 export class DadJokesComponent implements OnInit{
   joke: string = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private dadJokesService: DadJokesService) {}
 
   ngOnInit() {
     this.generateJoke();
   }
 
   generateJoke() {
-    const config = {
-      headers: {
-        'Accept': 'application/json'
-      }
-    }
-    this.http.get<Joke>('https://icanhazdadjoke.com/', config).subscribe(res => {
+    this.dadJokesService.getJokes().subscribe(res => {
       this.joke = res.joke;
     });
   }
